@@ -24,7 +24,5 @@ public class CellMap {
         map[x][y] = c;
     }
 
-    public Cell[][] getMap(){
-        return map;
-    }
+    public Cell[][] getMap() { return map; }
 }
