@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.awt.Graphics;
 
 public class CellMap {
     private Cell[][] map;
@@ -25,4 +24,12 @@ public class CellMap {
     }
 
     public Cell[][] getMap() { return map; }
+
+    public void drawEmAll(Graphics window){
+        for (int r = 0; r < map.length; r++){
+            for (int c = 0; c < map[r].length; c++){
+                map[r][c].draw(window);
+            }
+        }
+    }
 }
